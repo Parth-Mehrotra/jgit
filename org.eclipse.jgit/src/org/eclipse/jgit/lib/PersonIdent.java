@@ -283,6 +283,9 @@ public class PersonIdent implements Serializable {
 		return hc;
 	}
 
+	/**
+	 * @return true if getName(), getEmailAddress(), and time are equal
+	 */
 	public boolean equals(final Object o) {
 		if (o instanceof PersonIdent) {
 			final PersonIdent p = (PersonIdent) o;
